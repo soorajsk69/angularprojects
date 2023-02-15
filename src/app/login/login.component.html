@@ -1,0 +1,16 @@
+<h2>{{data}}</h2>
+<div class="container rounded w-50 border text-center mt-5 p-5" style="background-color: rgba(0, 0, 0, 0.221);">
+    <h1>Sing In To Your Bank Account</h1>
+    <form action="">
+        <div class="p-3 mt-2">
+            <input id="acid" (change)="acno($event)" name="acnum" type="text" class="form-control" placeholder="Account Number">
+        </div>
+
+        <div class="p-3 mt-2">
+            <input id="psw"(change)="pswdchange($event)" name="paswd" type="text" class="form-control" [placeholder]="input">
+        </div>
+        <div class="p-3 mt-2">
+            <button type="button" (click)="login()" class="btn btn-outline-light ">login</button>
+        </div>
+    </form>
+</div>

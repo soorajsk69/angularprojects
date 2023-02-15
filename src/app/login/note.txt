@@ -1,0 +1,34 @@
+Angular
+------
+
+create project 
+   -ng new projectName
+
+clear errors/warnings
+   -npm i --force 
+
+  project running 
+   -ng serve --open
+
+
+  life cycle of angular Component
+------------------------------------
+constructor --> ngOnInit --->other methods
+
+data Binding Techiniques in Angular (data sharing in component)
+-----------------------------------------------------------------
+html -view 
+ts- component
+
+
+1. one way Binding
+-------------------
+1.1 component to view data sharing
+
+ 1.1.1 string interpollation {{}}
+ 1.1.2 property binding  [property] ="variable name" 
+
+1.2 view to component data sharing
+
+  1.2.1 event binding (event)="method()"
+  1.2.2 event binding using $event  (event)=method($event)
