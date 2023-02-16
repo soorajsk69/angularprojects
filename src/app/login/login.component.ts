@@ -9,8 +9,8 @@ export class LoginComponent {
 data="your perfect banking partener"
 input="password"
 
-acano=""
-pswrd=""
+// acano=""
+// pswrd=""
 userDetails:any={
   1000:{acno:1000,username:"anu",password:"abc123",balance:0},
   1001:{acno:1001,username:"amal",password:"abc123",balance:0},
@@ -24,18 +24,52 @@ userDetails:any={
 
  }
 
-login(){
-  alert("login clicked")
+// login(){
+//   var acnum=this.acano
+//   var psw=this.pswrd
+//   var userDetails=this.userDetails
+//   if(acnum in userDetails){
+//   if(psw == userDetails[acnum]["password"]){
+//      alert("login sucess")
+//   }
+//   else{
+//     alert("incorrect password")
+//   }
+// }
+// else{
+//   alert("acno incurrect or not registered yet")
+// }
+//   // alert("login clicked")
+// }
+
+
+login(a:any,b:any){
+  var acnum=a.value
+  var psw=b.value
+  var userDetails=this.userDetails
+  if(acnum in userDetails){
+  if(psw == userDetails[acnum]["password"]){
+     alert("login sucess")
+  }
+  else{
+    alert("incorrect password")
+  }
+}
+else{
+  alert("acno incurrect or not registered yet")
+}
+//   // alert("login clicked")
 }
 
-acno(event:any){
-  this.acano=event.target.value
-  console.log(this.acano);
+
+// acnochange(event:any){
+//   this.acano=event.target.value
+//   // console.log(this.acano);
   
-} 
-pswdchange(event:any){
-  this.pswrd=event.target.value
-  console.log(this.pswrd);
+// } 
+// pswdchange(event:any){
+//   this.pswrd=event.target.value
+//   // console.log(this.pswrd);
   
-}
+// }
 }

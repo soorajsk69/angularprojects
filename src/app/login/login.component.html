@@ -3,14 +3,14 @@
     <h1>Sing In To Your Bank Account</h1>
     <form action="">
         <div class="p-3 mt-2">
-            <input id="acid" (change)="acno($event)" name="acnum" type="text" class="form-control" placeholder="Account Number">
+            <input id="acid" #acno name="acnum" type="text" class="form-control" placeholder="Account Number">
         </div>
 
         <div class="p-3 mt-2">
-            <input id="psw"(change)="pswdchange($event)" name="paswd" type="text" class="form-control" [placeholder]="input">
+            <input id="psw" #psw1 name="paswd" type="text" class="form-control" [placeholder]="input">
         </div>
         <div class="p-3 mt-2">
-            <button type="button" (click)="login()" class="btn btn-outline-light ">login</button>
+            <button type="button" (click)="login(acno,psw1)" class="btn btn-outline-light ">login</button>
         </div>
     </form>
 </div>
