@@ -33,3 +33,32 @@ ts- component
   1.2.1 event binding (event)="method()"
   1.2.2 event binding using $event  (event)=method($event)
   1.2.3 event blinding with template rendering variable#variable
+
+ 2. Two way  binding
+ -------------------
+ 2.1 ngModel [(ngModel)]="property" -- FormsModule
+
+Redierection In Angular
+------------------------
+Modules - AppRoutingModule
+Router  - a class used to redierect
+methods - navigateByUrl
+
+Depandency Injection
+--------------------
+
+to share datas from one class to another class
+
+inside constructor
+   
+      acess_specifier reference:ClassName
+      private/public
+
+      reference.method()
+
+Angular Service
+---------------
+
+To share redentent datas and methods
+-All the components can access the datas and methods defined in Service file easily
+           -ng g s Service_name

@@ -1,0 +1,22 @@
+<p>register works!</p>
+<div class="container rounded w-50 border text-center mt-5 p-5" style="background-color: rgba(0, 0, 0, 0.221);">
+    <h1>Sing up To Your Bank Account</h1>
+    <form action="">
+        <div class="p-3 mt-2">
+            <input [(ngModel)]="user2"  id="user" name="user1" type="text" class="form-control"
+                placeholder="Enter Username">
+        </div>
+
+        <div class="p-3 mt-2">
+            <input [(ngModel)]="acno2" id="acid" name="acid1" type="text" class="form-control"
+                placeholder="Account Number">
+        </div>
+
+        <div class="p-3 mt-2">
+            <input [(ngModel)]="pasw2" id="psw" name="paswd1" type="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="p-3 mt-2">
+            <button type="button" (click)="register()"  class="btn btn-outline-warning ">Register</button>
+        </div>
+    </form>
+</div>
