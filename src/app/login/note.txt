@@ -62,3 +62,58 @@ Angular Service
 To share redentent datas and methods
 -All the components can access the datas and methods defined in Service file easily
            -ng g s Service_name
+
+
+   Angular Dierectives  -to manipulate DashboardComponent
+   -------------------
+   
+   1.component Dierectives
+   2.structural Dierectives   *ngFor *ngIf
+   3.Atribute Dierectives  [ngClass]
+
+
+   validations In Angular
+   -----------------------
+   form creation in angular
+
+     1.template driven form
+     2.model driven form
+
+          1.reactive form -used to create model of form
+          reactive form contains    -  group,array,control
+              - ReactiveFormsModule -module
+              -FormBuilder          -class used to create model form
+              -group()              -method to create model
+
+ Local Storage IN Angualar
+ -------------------------
+
+ localStorage.getItem()  
+ localStorage.setItem()
+ localStorage.removeItem()  
+
+ ts to json- sringify     js to ts parse 
+
+
+ Parent Child Components Communication
+ -------------------------------------
+
+ @Input() parent to child data sharing
+ @output() child to parent data sharing 
+
+Event creation in Angular
+-------------------------
+we can create our own events in angular projects
+
+EventEmitter -class used to create userdefiend events
+
+              eventname=new EventEmitter()
+              emit()-to define the working time/to start the event
+
+ Date And In Angular
+ -------------------
+ class - date
+
+ Angular pipes
+ -------------
+ to convert data into another format             

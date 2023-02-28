@@ -1,24 +1,19 @@
 <h2 class="text-center mt-5 " style="color: rgba(0, 0, 0, 0.61);">Transaction Details</h2>
 <hr class="text-white">
 <div class="text-center container w-50 p-3 mt-5">
-<table class="text-white w-100 w-50 bg-dark p-5">
-  <thead class="bg-secondary border">
-    <tr>
-    <th>Type</th>
-    <th>Amount</th>
-</tr>
-  </thead>
-  <tbody>
-    <tr>
-        <td>CREDIT</td>
-        <td>50000</td>
-    </tr>
- <tr>
-   <td> DEBITED</td>
-   <td>1000</td>
- </tr>
-  </tbody>
-     
+  <table class="text-white w-100 w-50 bg-dark p-5">
+    <thead class="bg-secondary border">
+      <tr>
+        <th>Type</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+<tbody *ngFor="let i of transactionData" >
+      <tr>
+        <td>{{i.type}}</td>
+        <td>{{i.amount}}</td>
 
-</table>
+
+    </tbody>
+  </table>
 </div>
